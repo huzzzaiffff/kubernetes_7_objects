@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: my-config
+data:
+  # Key-value pairs
+  SIMPLE_KEY1: "value1"
+  SIMPLE_KEY2: "value2"
+
+  # Multiline content (will be mounted as files)
+  config-file-1: |
+    line1: This is the first line of file 1
+    line2: This is the second line of file 1
+
+  config-file-2: |
+    line1: This is the first line of file 2
+    line2: This is the second line of file 2
+
